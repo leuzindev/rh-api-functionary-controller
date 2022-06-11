@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+
+}
+.bloco-titulo{
+    background: linear-gradient(to left, #78787879, rgb(0, 0, 0));
+    height: 120px;
+}
+.titulo{
+   color:#00C52B;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+body{
+    background-color: rgb(91, 91, 91);
+}
+
+table {
+   
+    width: 100%;
+    text-align: center;
+}
+.td-dados{
+    
+    background-color: rgb(171, 171, 171);
+}
+table td {
+    width: 10%;
+    
+}
+
+table tr:first-child {
+    font-size: 20pt;
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.update-img {
+    width: 50px;
+}
+
+.deletar-img {
+    width: 50px;
+}
+
+.retonar-tabela{
+   color: black;
+    width: 100px;
+
+}
+
+footer{
+    background: linear-gradient(to left,  rgb(0, 0, 0),#78787879);
+}

@@ -1,0 +1,33 @@
+ <link rel="stylesheet" href="/css/form.css">
+ <header class="bloco-titulo">
+    <h1 class="titulo">Funcionários</h1>
+ </header>
+<table>
+    <tr>
+        <td>Editar / Remover</td>
+        <td>ID</td>
+        <td>Nome</td>
+        <td>Email</td>
+        <td>Area de atuação</td>
+    </tr>
+
+    {{#data}}
+     <tr>
+        <td class="td-dados">
+            <a href="update/{{id}}"><img src="/img/edit.png" class="update-img"></a>
+            <a href="deletar/{{id}}" class="deletar" ><img src="/img/remove.png" class="deletar-img"></a>        
+        </td>
+        <td class="td-dados">{{id}}</td>
+        <td class="td-dados">{{name}}</td>
+        <td class="td-dados">{{email}}</td>
+        <td class="td-dados">{{area}}</td>
+    </tr>
+    {{/data}}
+</table>   
+<footer>
+    <div>
+        <a href="http://localhost:3000/">
+            <svg class="retonar-tabela" id="seta"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-back" width="128" height="128" fill="currentColor"><g><path d="M19 7v6c0 1.103-.896 2-2 2H3v-3h13V8H5v2L1 6.5 5 3v2h12a2 2 0 0 1 2 2z"/></g></svg>
+        </a>
+    </div>
+</footer>

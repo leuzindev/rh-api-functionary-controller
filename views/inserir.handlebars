@@ -1,0 +1,47 @@
+
+<!doctype html>
+<html>
+<head>
+ <title>Registro de Funcionários</title>
+ <link rel="stylesheet" href="../css/formulario.css">
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="item head">
+       <h1>Registros de Funcionários</h1>
+    </div>
+  <form name = 'form1' action="controllerForm" method="post">
+    <div class="item main">     
+      <input   type="text" id="id" name="id" placeholder="ID:"/><br><br><br><br>
+
+      <input class="fomulario itemForm" type="text" id="name" name="name" placeholder="Nome completo:" required/><br><br><br>
+    
+      <input class="fomulario itemForm" type="password" id="senha"name="senha" placeholder="Senha:" required/><br><br><br>
+    
+      <input class="fomulario itemForm" type="password" id="repsenha" name="repsenha" placeholder="Repetir Senha:" required/><br><br><br>
+    
+      <input class="fomulario itemForm" type="email" id="email" name="email" placeholder="Email:" required/><br><br><br>
+    
+      <input class="fomulario itemForm" type="text" id="area"name="area" placeholder="Área de Atuação:" required/><br><br><br>
+    
+      <button name="btnSubmit" id="btnSubmit" value="Add">Registrar</button>
+    </div>
+    </form>
+    <div class="item icone" >
+      <img src="../img/loginanimation.svg" alt="imagem-de-tela-de-login">
+    </div>
+    
+    <div class="item footer">
+      <a href="http://localhost:3000/">
+        <div id="voltar" >
+          <svg  id="seta"xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 20 20" id="entypo-back" width="128" height="128" fill="currentColor"><g><path d="M19 7v6c0 1.103-.896 2-2 2H3v-3h13V8H5v2L1 6.5 5 3v2h12a2 2 0 0 1 2 2z"/></g></svg>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  
+
+</body>
+</html>

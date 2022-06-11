@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding-bottom: 0;
+    font-family: 'Exo', sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #8F8F8F ;
+}
+
+.grid-container{
+   
+    display: grid;
+    grid-gap:0px;
+    width: 100%;
+    height: 100%;
+    
+    grid-template-areas:
+    "head head head head"
+    "main icone icone icone"
+    "main footer footer footer";
+ 
+}
+.head{
+    grid-area:head;
+    
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to left, #78787879, rgb(0, 0, 0));
+    color:#00C52B;
+}
+.main{
+    padding-top:7% ;
+    grid-area:main;
+    height:100vh;
+    width: auto;
+    margin: 15px;
+    padding-left: 90px;
+   
+}
+.icone{
+    padding-top: 50px;
+    padding-left: 10%;
+    grid-area:icone;
+    height: auto;
+    width: auto;
+    margin: 15px;
+   
+}
+.foolter{
+    height: auto;
+    width: auto;
+    margin: 15px;
+   
+}
+   
+.fomulario{
+    height: 8%;
+    width: 99%;
+    border: none;
+    border-radius: 25px;
+    background-color: #6A6969;
+    font-size: xx-large;
+    font-family: 'Exo', sans-serif;
+    color:#00C52B ;
+}
+input{
+    outline: 0;
+    transition: 1s;
+    
+    
+}
+input, textarea{
+    padding-left: 20px;
+    
+}
+input::placeholder{ 
+    font-size: 22pt;
+    padding-left: 20px;
+    color:#1ab23b
+}
+input:invalid{
+    border-color: red;
+}
+input:hover{
+    background-color: #3a3a3a;
+}
+
+#ID{
+    width: 20%;
+    height: 8%;
+    font-size: xx-large;
+    background-color: #6A6969;
+    border: none;
+    border-radius: 25px;
+    color:#00C52B ;
+    
+}
+#ID:hover{
+    background-color: #3a3a3a;
+}
+button{
+    cursor: pointer;
+    height: 15%;
+    width: 100%;
+    font-size: xx-large;
+    color: white ;
+    border-radius: 10px;
+    border: none;
+    background-color: #3a3a3a ;
+    transition: 1s;
+   font-weight: bold;
+}
+button:hover{
+    transform: scale(1.05);
+    color:#02e733 ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, 
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}   
+
+h1{
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    padding-top: 50px;
+}
+#voltar{
+    text-align: center;
+    background-color: #6A6969;
+    border-top-left-radius: 10px;
+    position: absolute;
+    top: 1060px;
+    right: 0px;
+    width: 120px;
+    
+    cursor: pointer;
+    transition: 1s;
+}
+#seta{
+    color: #00C52B;
+    width: 69px;
+    
+}
+#voltar:hover{
+    background-color: #3a3a3a;
+    
+}
+.seta1{
+    color: #0f0f0f;
+    position: absulute; 
+    right: 40px;
+    
+}
+.frase{
+    display: flex;
+    justify-content: center;
+}
+
+.til{
+    display: flex;
+    justify-content: center;
+    padding-left: 200px;
+}
+@media only screen and (max-width: 1429px){
+    .icone{
+        display: none;
+    }
+   
+}
+
